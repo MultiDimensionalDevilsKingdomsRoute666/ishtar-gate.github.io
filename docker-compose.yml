@@ -1,0 +1,9 @@
+services:
+    app:
+        container_name: ishtar-gate-app
+        build:
+            context: .
+            dockerfile: Dockerfile
+        ports:
+            - "3000:80"
+        tty: true
